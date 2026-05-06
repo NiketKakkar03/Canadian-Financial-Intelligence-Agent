@@ -4,6 +4,8 @@ A multi-agent LangGraph system that accepts a natural-language research query ab
 
 Built as a portfolio piece targeting Canadian fintech roles (RBC, Manulife, TD, AWS Canada). Demonstrates MultiServerMCPClient connecting to two live MCP servers simultaneously, parallel agent execution via the LangGraph Send API, and SQLite-backed checkpointing.
 
+> **Depends on** [TSX Financial Data MCP Server](https://github.com/NiketKakkar03/TSX-Financial-Data-MCP-Server) — a FastMCP server exposing structured quarterly financials for TSX 60 companies via `search_filings` and `summarize_quarter` tools.
+
 ## Architecture
 
 ```
@@ -32,7 +34,7 @@ POST /research
 
 - Python 3.10
 - Docker Desktop
-- Project 1 (TSX Financial Data MCP Server) with its Postgres container running
+- [TSX Financial Data MCP Server](https://github.com/NiketKakkar03/TSX-Financial-Data-MCP-Server) with its Postgres container running
 - Anthropic API key — [console.anthropic.com](https://console.anthropic.com)
 - Tavily API key — [tavily.com](https://tavily.com)
 
