@@ -1,0 +1,10 @@
+services:
+  tavily-mcp:
+    image: node:22-alpine
+    working_dir: /app
+    environment:
+      TAVILY_API_KEY: ${TAVILY_API_KEY}
+    ports:
+      - "8001:8001"
+    command: ["sh", "-c", "npx -y supergateway --stdio 'npx -y tavily-mcp' --port 8001 --ssePath /mcp --messagePath /mcp/message"]
+    restart: unless-stopped

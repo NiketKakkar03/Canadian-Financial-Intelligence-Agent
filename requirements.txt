@@ -1,0 +1,7 @@
+langgraph
+langgraph-checkpoint-sqlite
+langchain-mcp-adapters
+langchain-anthropic
+anthropic
+fastapi
+uvicorn[standard]

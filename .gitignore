@@ -1,0 +1,8 @@
+checkpoints.db*
+*.ini
+__pycache__/
+*.pyc
+.env.example
+CONTEXT.md
+MCP_CLAUDE.md
+prd.md
